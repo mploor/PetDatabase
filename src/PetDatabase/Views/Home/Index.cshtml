@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="PetDatabase">
+<head>
+    <link href="~/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/style.css" rel="stylesheet" />
+    <title>Pet Database</title>
+    <base href="/" />
+</head>
+<body>
+    <div class="container">
+        <h1>Matthew's Pet Database</h1>
+        <a ui-sref="master">Home</a> | <a ui-sref="add">Add Pet</a>
+    </div>
+    <ui-view></ui-view>
+    <div class="container">
+        <br />
+        <p>This page was created by Matthew Ploor for no money whatsoever.</p>
+        <p>Trespassers will be fed to the pets.</p>
+    </div>
+    <script src="~/bower_components/angular/angular.min.js"></script>
+    <script src="~/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="~/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="~/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="~/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/ngApp/controllers/controllers.js"></script>
+    <script src="~/ngApp/app.js"></script>
+</body>
+</html>

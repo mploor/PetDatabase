@@ -1,0 +1,28 @@
+﻿body {
+}
+
+img {
+    float: left;
+    margin: 20px;
+}
+
+.petInfo {
+    background: lightblue;
+    margin: 20px;
+}
+
+.sortbutton {
+    float: right;
+}
+
+.myTable {
+    width: 700px;
+}
+
+.tabText {
+    font-size: 2em;
+}
+
+.stdText {
+    font-size: 0.5em;
+}

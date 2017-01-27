@@ -1,0 +1,51 @@
+﻿<form class="container">
+
+    <br />
+    <div class="container form-group">
+        <label for="name" class="col-sm-2 control-label">Name:</label>
+        <input type="text" id="name" ng-model="c.pet.name" />
+    </div>
+
+    <div class="container form-group">
+        <label for="species" class="col-sm-2 control-label">Species:</label>
+        <input type="text" id="species" ng-model="c.pet.species" />
+    </div>
+
+    <div class="container form-group">
+        <label for="age" class="col-sm-2 control-label">Age:</label>
+        <input type="text" id="age" ng-model="c.pet.age" />
+    </div>
+
+    <div class="container form-group">
+        <label for="faveToy" class="col-sm-2 control-label">Favorite Toy:</label>
+        <input type="text" id="faveToy" ng-model="c.pet.faveToy" />
+    </div>
+
+    <div class="container form-group">
+        <label for="pic" class="col-sm-2 control-label">Picture Link:</label>
+        <input type="text" id="pic" ng-model="c.pet.pic" size="60" />
+    </div>
+
+    <div class="container">
+        <button class="btn btn-default" ng-click="c.cancelChange()">Cancel</button>
+        <button class="btn btn-primary" ng-click="c.makeChange()" data-toggle="modal" data-target="#editConfirm">Make Change</button>
+    </div>
+
+</form>
+
+<div id="editConfirm" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Pet Edit Confirmation</h4>
+            </div>
+            <div class="modal-body">
+                <p><strong>Changes saved!</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
