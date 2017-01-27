@@ -27,8 +27,8 @@
     </div>
 
     <div class="container">
-        <button class="btn btn-default" ng-click="c.cancelChange()">Cancel</button>
-        <button class="btn btn-primary" ng-click="c.makeChange()" data-toggle="modal" data-target="#editConfirm">Make Change</button>
+        <button class="btn btn-default" ng-click="c.goHome()">Cancel</button>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#editConfirm" ng-click="c.makeChange()">Make Change</button>
     </div>
 
 </form>
@@ -44,7 +44,7 @@
                 <p><strong>Changes saved!</strong></p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="c.goHome()">OK</button>
             </div>
         </div>
     </div>

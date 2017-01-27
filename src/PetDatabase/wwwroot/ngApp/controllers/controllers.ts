@@ -89,10 +89,9 @@
                     pets[i].pic = this.pet.pic;
                 }
             }
-            this.$state.go("master");
         }
 
-        public cancelChange() {
+        public goHome() {
             this.$state.go("master");
         }
     }
